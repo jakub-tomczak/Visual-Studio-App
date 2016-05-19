@@ -191,6 +191,8 @@ namespace WindowAppTest {
 			// 
 			// BoxOutput
 			// 
+			this->BoxOutput->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
 			this->BoxOutput->Location = System::Drawing::Point(128, 65);
 			this->BoxOutput->Name = L"BoxOutput";
 			this->BoxOutput->Size = System::Drawing::Size(112, 27);
@@ -198,193 +200,273 @@ namespace WindowAppTest {
 			// 
 			// Button7
 			// 
+			this->Button7->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button7->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button7->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button7->Location = System::Drawing::Point(51, 107);
 			this->Button7->Name = L"Button7";
 			this->Button7->Size = System::Drawing::Size(51, 23);
 			this->Button7->TabIndex = 9;
 			this->Button7->Text = L"7";
-			this->Button7->UseVisualStyleBackColor = true;
+			this->Button7->UseVisualStyleBackColor = false;
 			this->Button7->Click += gcnew System::EventHandler(this, &MyForm::Button7_Click);
 			// 
 			// Button8
 			// 
+			this->Button8->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button8->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button8->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button8->Location = System::Drawing::Point(114, 107);
 			this->Button8->Name = L"Button8";
 			this->Button8->Size = System::Drawing::Size(51, 23);
 			this->Button8->TabIndex = 10;
 			this->Button8->Text = L"8";
-			this->Button8->UseVisualStyleBackColor = true;
+			this->Button8->UseVisualStyleBackColor = false;
 			this->Button8->Click += gcnew System::EventHandler(this, &MyForm::Button8_Click_1);
 			// 
 			// Button9
 			// 
+			this->Button9->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button9->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button9->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button9->Location = System::Drawing::Point(180, 107);
 			this->Button9->Name = L"Button9";
 			this->Button9->Size = System::Drawing::Size(51, 23);
 			this->Button9->TabIndex = 11;
 			this->Button9->Text = L"9";
-			this->Button9->UseVisualStyleBackColor = true;
+			this->Button9->UseVisualStyleBackColor = false;
 			this->Button9->Click += gcnew System::EventHandler(this, &MyForm::Button9_Click_1);
 			// 
 			// ButtonDivide
 			// 
+			this->ButtonDivide->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonDivide->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonDivide->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonDivide->Location = System::Drawing::Point(276, 107);
 			this->ButtonDivide->Name = L"ButtonDivide";
 			this->ButtonDivide->Size = System::Drawing::Size(62, 23);
 			this->ButtonDivide->TabIndex = 12;
 			this->ButtonDivide->Text = L"/";
-			this->ButtonDivide->UseVisualStyleBackColor = true;
+			this->ButtonDivide->UseVisualStyleBackColor = false;
 			// 
 			// ButtonMR
 			// 
+			this->ButtonMR->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonMR->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonMR->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonMR->Location = System::Drawing::Point(358, 107);
 			this->ButtonMR->Name = L"ButtonMR";
 			this->ButtonMR->Size = System::Drawing::Size(62, 23);
 			this->ButtonMR->TabIndex = 13;
 			this->ButtonMR->Text = L"MR";
-			this->ButtonMR->UseVisualStyleBackColor = true;
+			this->ButtonMR->UseVisualStyleBackColor = false;
 			// 
 			// ButtonMC
 			// 
+			this->ButtonMC->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonMC->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonMC->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonMC->Location = System::Drawing::Point(358, 147);
 			this->ButtonMC->Name = L"ButtonMC";
 			this->ButtonMC->Size = System::Drawing::Size(62, 23);
 			this->ButtonMC->TabIndex = 18;
 			this->ButtonMC->Text = L"MC";
-			this->ButtonMC->UseVisualStyleBackColor = true;
+			this->ButtonMC->UseVisualStyleBackColor = false;
 			// 
 			// ButtonMultiply
 			// 
+			this->ButtonMultiply->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonMultiply->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonMultiply->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonMultiply->Location = System::Drawing::Point(276, 147);
 			this->ButtonMultiply->Name = L"ButtonMultiply";
 			this->ButtonMultiply->Size = System::Drawing::Size(62, 23);
 			this->ButtonMultiply->TabIndex = 17;
 			this->ButtonMultiply->Text = L"*";
-			this->ButtonMultiply->UseVisualStyleBackColor = true;
+			this->ButtonMultiply->UseVisualStyleBackColor = false;
 			// 
 			// Button6
 			// 
+			this->Button6->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button6->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button6->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button6->Location = System::Drawing::Point(180, 147);
 			this->Button6->Name = L"Button6";
 			this->Button6->Size = System::Drawing::Size(51, 23);
 			this->Button6->TabIndex = 16;
 			this->Button6->Text = L"6";
-			this->Button6->UseVisualStyleBackColor = true;
+			this->Button6->UseVisualStyleBackColor = false;
 			this->Button6->Click += gcnew System::EventHandler(this, &MyForm::Button6_Click_1);
 			// 
 			// Button5
 			// 
+			this->Button5->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button5->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button5->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button5->Location = System::Drawing::Point(114, 147);
 			this->Button5->Name = L"Button5";
 			this->Button5->Size = System::Drawing::Size(51, 23);
 			this->Button5->TabIndex = 15;
 			this->Button5->Text = L"5";
-			this->Button5->UseVisualStyleBackColor = true;
+			this->Button5->UseVisualStyleBackColor = false;
 			this->Button5->Click += gcnew System::EventHandler(this, &MyForm::Button5_Click_1);
 			// 
 			// Button4
 			// 
+			this->Button4->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button4->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button4->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button4->Location = System::Drawing::Point(51, 147);
 			this->Button4->Name = L"Button4";
 			this->Button4->Size = System::Drawing::Size(51, 23);
 			this->Button4->TabIndex = 14;
 			this->Button4->Text = L"4";
-			this->Button4->UseVisualStyleBackColor = true;
+			this->Button4->UseVisualStyleBackColor = false;
 			this->Button4->Click += gcnew System::EventHandler(this, &MyForm::Button4_Click_1);
 			// 
 			// ButtonEqual
 			// 
+			this->ButtonEqual->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonEqual->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonEqual->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonEqual->Location = System::Drawing::Point(358, 231);
 			this->ButtonEqual->Name = L"ButtonEqual";
 			this->ButtonEqual->Size = System::Drawing::Size(62, 23);
 			this->ButtonEqual->TabIndex = 28;
 			this->ButtonEqual->Text = L"=";
-			this->ButtonEqual->UseVisualStyleBackColor = true;
+			this->ButtonEqual->UseVisualStyleBackColor = false;
 			// 
 			// ButtonAdd
 			// 
+			this->ButtonAdd->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonAdd->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonAdd->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonAdd->Location = System::Drawing::Point(276, 231);
 			this->ButtonAdd->Name = L"ButtonAdd";
 			this->ButtonAdd->Size = System::Drawing::Size(62, 23);
 			this->ButtonAdd->TabIndex = 27;
 			this->ButtonAdd->Text = L"+";
-			this->ButtonAdd->UseVisualStyleBackColor = true;
+			this->ButtonAdd->UseVisualStyleBackColor = false;
 			// 
 			// ButtonDot
 			// 
+			this->ButtonDot->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonDot->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonDot->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonDot->Location = System::Drawing::Point(180, 231);
 			this->ButtonDot->Name = L"ButtonDot";
 			this->ButtonDot->Size = System::Drawing::Size(51, 23);
 			this->ButtonDot->TabIndex = 26;
 			this->ButtonDot->Text = L".";
-			this->ButtonDot->UseVisualStyleBackColor = true;
+			this->ButtonDot->UseVisualStyleBackColor = false;
 			this->ButtonDot->Click += gcnew System::EventHandler(this, &MyForm::ButtonDot_Click);
 			// 
 			// ButtonPosNeg
 			// 
+			this->ButtonPosNeg->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonPosNeg->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonPosNeg->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonPosNeg->Location = System::Drawing::Point(114, 231);
 			this->ButtonPosNeg->Name = L"ButtonPosNeg";
 			this->ButtonPosNeg->Size = System::Drawing::Size(51, 23);
 			this->ButtonPosNeg->TabIndex = 25;
 			this->ButtonPosNeg->Text = L"+/-";
-			this->ButtonPosNeg->UseVisualStyleBackColor = true;
+			this->ButtonPosNeg->UseVisualStyleBackColor = false;
 			this->ButtonPosNeg->Click += gcnew System::EventHandler(this, &MyForm::ButtonPosNeg_Click);
 			// 
 			// Button0
 			// 
+			this->Button0->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button0->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button0->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button0->Location = System::Drawing::Point(51, 231);
 			this->Button0->Name = L"Button0";
 			this->Button0->Size = System::Drawing::Size(51, 23);
 			this->Button0->TabIndex = 24;
 			this->Button0->Text = L"0";
-			this->Button0->UseVisualStyleBackColor = true;
+			this->Button0->UseVisualStyleBackColor = false;
 			// 
 			// ButtonMPlus
 			// 
+			this->ButtonMPlus->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonMPlus->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonMPlus->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonMPlus->Location = System::Drawing::Point(358, 189);
 			this->ButtonMPlus->Name = L"ButtonMPlus";
 			this->ButtonMPlus->Size = System::Drawing::Size(62, 23);
 			this->ButtonMPlus->TabIndex = 23;
 			this->ButtonMPlus->Text = L"M+";
-			this->ButtonMPlus->UseVisualStyleBackColor = true;
+			this->ButtonMPlus->UseVisualStyleBackColor = false;
 			// 
 			// ButtonMinus
 			// 
+			this->ButtonMinus->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonMinus->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonMinus->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonMinus->Location = System::Drawing::Point(276, 189);
 			this->ButtonMinus->Name = L"ButtonMinus";
 			this->ButtonMinus->Size = System::Drawing::Size(62, 23);
 			this->ButtonMinus->TabIndex = 22;
 			this->ButtonMinus->Text = L"-";
-			this->ButtonMinus->UseVisualStyleBackColor = true;
+			this->ButtonMinus->UseVisualStyleBackColor = false;
 			// 
 			// Button3
 			// 
+			this->Button3->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button3->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button3->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button3->Location = System::Drawing::Point(180, 189);
 			this->Button3->Name = L"Button3";
 			this->Button3->Size = System::Drawing::Size(51, 23);
 			this->Button3->TabIndex = 21;
 			this->Button3->Text = L"3";
-			this->Button3->UseVisualStyleBackColor = true;
+			this->Button3->UseVisualStyleBackColor = false;
 			this->Button3->Click += gcnew System::EventHandler(this, &MyForm::Button3_Click_1);
 			// 
 			// Button2
 			// 
+			this->Button2->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button2->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button2->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button2->Location = System::Drawing::Point(114, 189);
 			this->Button2->Name = L"Button2";
 			this->Button2->Size = System::Drawing::Size(51, 23);
 			this->Button2->TabIndex = 20;
 			this->Button2->Text = L"2";
-			this->Button2->UseVisualStyleBackColor = true;
+			this->Button2->UseVisualStyleBackColor = false;
 			this->Button2->Click += gcnew System::EventHandler(this, &MyForm::Button2_Click_1);
 			// 
 			// Button1
 			// 
+			this->Button1->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Button1->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->Button1->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Button1->Location = System::Drawing::Point(51, 189);
 			this->Button1->Name = L"Button1";
 			this->Button1->Size = System::Drawing::Size(51, 23);
 			this->Button1->TabIndex = 19;
 			this->Button1->Text = L"1";
-			this->Button1->UseVisualStyleBackColor = true;
+			this->Button1->UseVisualStyleBackColor = false;
 			this->Button1->Click += gcnew System::EventHandler(this, &MyForm::Button1_Click_1);
 			// 
 			// TextBoxInfo
@@ -407,31 +489,43 @@ namespace WindowAppTest {
 			// 
 			// ButtonToDo
 			// 
+			this->ButtonToDo->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonToDo->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonToDo->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonToDo->Location = System::Drawing::Point(51, 274);
 			this->ButtonToDo->Name = L"ButtonToDo";
 			this->ButtonToDo->Size = System::Drawing::Size(101, 35);
 			this->ButtonToDo->TabIndex = 31;
 			this->ButtonToDo->Text = L"ToDo";
-			this->ButtonToDo->UseVisualStyleBackColor = true;
+			this->ButtonToDo->UseVisualStyleBackColor = false;
 			this->ButtonToDo->Click += gcnew System::EventHandler(this, &MyForm::ButtonToDo_Click);
 			// 
 			// ButtonChangeColor
 			// 
+			this->ButtonChangeColor->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonChangeColor->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonChangeColor->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonChangeColor->Location = System::Drawing::Point(168, 274);
 			this->ButtonChangeColor->Name = L"ButtonChangeColor";
 			this->ButtonChangeColor->Size = System::Drawing::Size(118, 35);
 			this->ButtonChangeColor->TabIndex = 32;
 			this->ButtonChangeColor->Text = L"ChangeColor";
-			this->ButtonChangeColor->UseVisualStyleBackColor = true;
+			this->ButtonChangeColor->UseVisualStyleBackColor = false;
 			// 
 			// ButtonChangeFont
 			// 
+			this->ButtonChangeFont->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->ButtonChangeFont->Font = (gcnew System::Drawing::Font(L"Apolonia", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->ButtonChangeFont->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->ButtonChangeFont->Location = System::Drawing::Point(311, 274);
 			this->ButtonChangeFont->Name = L"ButtonChangeFont";
 			this->ButtonChangeFont->Size = System::Drawing::Size(109, 36);
 			this->ButtonChangeFont->TabIndex = 33;
 			this->ButtonChangeFont->Text = L"ChangeFont";
-			this->ButtonChangeFont->UseVisualStyleBackColor = true;
+			this->ButtonChangeFont->UseVisualStyleBackColor = false;
 			// 
 			// MyForm
 			// 
