@@ -162,11 +162,27 @@
     <ClInclude Include="OpenFileDialog1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MyForm.pl-PL.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WindowAppTest.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\1463704882_Calculator_alt.ico" />
+    <Image Include="..\..\..\icon.png" />
+    <Image Include="icon1.ico" />
+    <Image Include="mainIcon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
