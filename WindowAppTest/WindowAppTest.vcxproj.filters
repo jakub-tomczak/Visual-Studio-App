@@ -61,6 +61,9 @@
     <EmbeddedResource Include="MyForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.pl-PL.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
@@ -78,9 +81,6 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\..\..\icon.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\..\..\1463704882_Calculator_alt.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

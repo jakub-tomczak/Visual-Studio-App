@@ -131,8 +131,8 @@
   <data name="&gt;&gt;Button6.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="LabelMemoryMain.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;TextBoxInfo.Name" xml:space="preserve">
+    <value>TextBoxInfo</value>
   </data>
   <data name="ButtonEqual.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
@@ -140,17 +140,11 @@
   <data name="ButtonDivide.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;ButtonDivide.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;TextBoxInfo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ButtonToDo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
-  </data>
-  <data name="ButtonDivide.Text" xml:space="preserve">
-    <value>/</value>
   </data>
   <data name="ButtonMPlus.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
@@ -192,9 +186,6 @@
   <data name="&gt;&gt;Button7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ButtonMR.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;ButtonMPlus.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -221,9 +212,6 @@
   </data>
   <data name="&gt;&gt;ButtonMC.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ButtonPosNeg.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="ButtonAdd.Location" type="System.Drawing.Point, System.Drawing">
     <value>276, 231</value>
@@ -255,6 +243,9 @@
   <data name="ButtonMultiply.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
+  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Kalkulator</value>
   </data>
@@ -270,8 +261,8 @@
   <data name="ButtonChangeFont.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="&gt;&gt;Button8.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;Button0.Parent" xml:space="preserve">
     <value>$this</value>
@@ -282,11 +273,11 @@
   <data name="ButtonNewWindow.Text" xml:space="preserve">
     <value>Przejdź do drugiego okna</value>
   </data>
+  <data name="LabelOutput.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="Button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
-  </data>
-  <data name="Button0.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
   </data>
   <data name="LabelMemory.Location" type="System.Drawing.Point, System.Drawing">
     <value>359, 24</value>
@@ -363,11 +354,8 @@
   <data name="ButtonMinus.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="Button6.Text" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;LabelOutput.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ButtonPosNeg.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="LabelInput.Text" xml:space="preserve">
     <value>INPUT</value>
@@ -423,7 +411,7 @@
   <data name="Button6.Location" type="System.Drawing.Point, System.Drawing">
     <value>180, 147</value>
   </data>
-  <data name="ButtonMinus.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Button6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
   </data>
   <data name="&gt;&gt;Button8.Type" xml:space="preserve">
@@ -444,11 +432,11 @@
   <data name="ButtonDot.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="Button6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Apolonia, 12pt</value>
+  <data name="&gt;&gt;LabelOutput.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;Button7.ZOrder" xml:space="preserve">
-    <value>24</value>
+  <data name="Button6.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;LabelInput.Parent" xml:space="preserve">
     <value>$this</value>
@@ -477,9 +465,6 @@
   <data name="&gt;&gt;ButtonMultiply.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonMultiply.Name" xml:space="preserve">
-    <value>ButtonMultiply</value>
-  </data>
   <data name="&gt;&gt;ButtonMPlus.Name" xml:space="preserve">
     <value>ButtonMPlus</value>
   </data>
@@ -495,17 +480,14 @@
   <data name="&gt;&gt;Button9.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Button0.Name" xml:space="preserve">
+    <value>Button0</value>
   </data>
   <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
     <value>linkLabel1</value>
   </data>
-  <data name="Button8.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Button6.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="ButtonNewWindow.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;ButtonChangeFont.Name" xml:space="preserve">
     <value>ButtonChangeFont</value>
@@ -537,14 +519,17 @@
   <data name="Button5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
   </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MyForm</value>
+  </data>
   <data name="ButtonMPlus.Text" xml:space="preserve">
     <value>M+</value>
   </data>
   <data name="ButtonMPlus.Location" type="System.Drawing.Point, System.Drawing">
     <value>358, 189</value>
   </data>
-  <data name="Button7.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;ButtonMultiply.Name" xml:space="preserve">
+    <value>ButtonMultiply</value>
   </data>
   <data name="Button9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
@@ -572,6 +557,9 @@
   </data>
   <data name="&gt;&gt;Button1.Name" xml:space="preserve">
     <value>Button1</value>
+  </data>
+  <data name="BoxOutput.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Apolonia, 12pt</value>
   </data>
   <data name="Button8.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 23</value>
@@ -621,11 +609,17 @@
   <data name="&gt;&gt;Button6.Name" xml:space="preserve">
     <value>Button6</value>
   </data>
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 23</value>
+  </data>
   <data name="Button0.Text" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 189</value>
+  </data>
+  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 19</value>
   </data>
   <data name="&gt;&gt;ButtonAdd.Name" xml:space="preserve">
     <value>ButtonAdd</value>
@@ -648,11 +642,11 @@
   <data name="&gt;&gt;ButtonPosNeg.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ButtonNewWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 171</value>
+  <data name="&gt;&gt;Button8.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
-  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;ButtonChangeColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Button8.Location" type="System.Drawing.Point, System.Drawing">
     <value>114, 107</value>
@@ -668,6 +662,9 @@
   </data>
   <data name="Button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 23</value>
+  </data>
+  <data name="ButtonChangeColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 274</value>
   </data>
   <data name="Button2.Text" xml:space="preserve">
     <value>2</value>
@@ -693,8 +690,8 @@
   <data name="LabelInput.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MyForm</value>
+  <data name="Button8.Text" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;ButtonDivide.ZOrder" xml:space="preserve">
     <value>21</value>
@@ -720,8 +717,8 @@
   <data name="Button4.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="LabelOutput.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="Button0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 23</value>
   </data>
   <data name="BoxInput.Location" type="System.Drawing.Point, System.Drawing">
     <value>128, 24</value>
@@ -729,8 +726,11 @@
   <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;BoxInput.Name" xml:space="preserve">
-    <value>BoxInput</value>
+  <data name="ButtonPosNeg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 231</value>
+  </data>
+  <data name="&gt;&gt;Button7.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
     <value>www.wp.pl</value>
@@ -753,17 +753,17 @@
   <data name="&gt;&gt;ButtonMC.Name" xml:space="preserve">
     <value>ButtonMC</value>
   </data>
-  <data name="ButtonAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 23</value>
-  </data>
   <data name="ButtonDivide.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 23</value>
+  </data>
+  <data name="Button9.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;ButtonEqual.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ButtonEqual.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="Button0.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="LabelInput.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -783,8 +783,8 @@
   <data name="&gt;&gt;ButtonMR.Name" xml:space="preserve">
     <value>ButtonMR</value>
   </data>
-  <data name="&gt;&gt;Button0.Name" xml:space="preserve">
-    <value>Button0</value>
+  <data name="ButtonDivide.Text" xml:space="preserve">
+    <value>/</value>
   </data>
   <data name="LabelMemory.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -816,11 +816,8 @@
   <data name="LabelMemoryMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;ButtonChangeColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 19</value>
+  <data name="ButtonAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 23</value>
   </data>
   <data name="&gt;&gt;ButtonEqual.Name" xml:space="preserve">
     <value>ButtonEqual</value>
@@ -828,8 +825,8 @@
   <data name="Button0.Font" type="System.Drawing.Font, System.Drawing">
     <value>Apolonia, 12pt</value>
   </data>
-  <data name="ButtonMR.Text" xml:space="preserve">
-    <value>MR</value>
+  <data name="Button7.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="BoxInput.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -840,11 +837,11 @@
   <data name="ButtonMR.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="LabelMemory.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="Button6.Text" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="ButtonPosNeg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 231</value>
+  <data name="&gt;&gt;ButtonEqual.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="Button1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -864,8 +861,8 @@
   <data name="&gt;&gt;ButtonNewWindow.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
-  <data name="ButtonNewWindow.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="LabelOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 19</value>
   </data>
   <data name="&gt;&gt;Button9.Parent" xml:space="preserve">
     <value>$this</value>
@@ -873,8 +870,8 @@
   <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 23</value>
+  <data name="&gt;&gt;ButtonMR.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="LabelInput.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 19</value>
@@ -900,8 +897,8 @@
   <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 147</value>
   </data>
-  <data name="Button9.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="ButtonMinus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Apolonia, 12pt</value>
   </data>
   <data name="&gt;&gt;LabelMemoryMain.Parent" xml:space="preserve">
     <value>$this</value>
@@ -924,8 +921,8 @@
   <data name="Button1.Text" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;TextBoxInfo.Name" xml:space="preserve">
-    <value>TextBoxInfo</value>
+  <data name="&gt;&gt;ButtonDivide.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -936,8 +933,8 @@
   <data name="&gt;&gt;LabelInput.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Button0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 23</value>
+  <data name="LabelMemory.Text" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;Button4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -951,8 +948,8 @@
   <data name="ButtonNewWindow.Location" type="System.Drawing.Point, System.Drawing">
     <value>311, 345</value>
   </data>
-  <data name="LabelOutput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 19</value>
+  <data name="LabelMemoryMain.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;ButtonAdd.Parent" xml:space="preserve">
     <value>$this</value>
@@ -960,8 +957,8 @@
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 65</value>
   </data>
-  <data name="ButtonChangeColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 274</value>
+  <data name="&gt;&gt;BoxInput.Name" xml:space="preserve">
+    <value>BoxInput</value>
   </data>
   <data name="&gt;&gt;linkLabel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -977,6 +974,9 @@
   </data>
   <data name="&gt;&gt;ButtonNewWindow.Name" xml:space="preserve">
     <value>ButtonNewWindow</value>
+  </data>
+  <data name="ButtonMR.Text" xml:space="preserve">
+    <value>MR</value>
   </data>
   <data name="&gt;&gt;ButtonEqual.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1002,8 +1002,8 @@
   <data name="&gt;&gt;ButtonToDo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BoxOutput.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Apolonia, 12pt</value>
+  <data name="ButtonNewWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 171</value>
   </data>
   <data name="LabelMemoryMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 24</value>

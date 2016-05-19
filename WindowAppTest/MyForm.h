@@ -133,52 +133,55 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonNewWindow, L"ButtonNewWindow");
 			this->ButtonNewWindow->AutoEllipsis = true;
+			this->ButtonNewWindow->BackColor = System::Drawing::Color::DarkGray;
+			this->ButtonNewWindow->ForeColor = System::Drawing::SystemColors::ButtonFace;
 			this->ButtonNewWindow->Name = L"ButtonNewWindow";
-			this->ButtonNewWindow->UseVisualStyleBackColor = true;
+			this->ButtonNewWindow->UseVisualStyleBackColor = false;
 			this->ButtonNewWindow->Click += gcnew System::EventHandler(this, &MyForm::ButtonNewWindow_Click);
 			// 
 			// LabelInput
 			// 
 			resources->ApplyResources(this->LabelInput, L"LabelInput");
-			this->LabelInput->ForeColor = System::Drawing::SystemColors::Control;
+			this->LabelInput->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->LabelInput->Name = L"LabelInput";
 			this->LabelInput->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// LabelOutput
 			// 
 			resources->ApplyResources(this->LabelOutput, L"LabelOutput");
-			this->LabelOutput->ForeColor = System::Drawing::SystemColors::Control;
+			this->LabelOutput->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->LabelOutput->Name = L"LabelOutput";
 			// 
 			// LabelMemoryMain
 			// 
 			resources->ApplyResources(this->LabelMemoryMain, L"LabelMemoryMain");
-			this->LabelMemoryMain->ForeColor = System::Drawing::SystemColors::Control;
+			this->LabelMemoryMain->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->LabelMemoryMain->Name = L"LabelMemoryMain";
 			// 
 			// LabelMemory
 			// 
 			resources->ApplyResources(this->LabelMemory, L"LabelMemory");
-			this->LabelMemory->ForeColor = System::Drawing::SystemColors::Control;
+			this->LabelMemory->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->LabelMemory->Name = L"LabelMemory";
 			// 
 			// BoxInput
 			// 
 			resources->ApplyResources(this->BoxInput, L"BoxInput");
-			this->BoxInput->ForeColor = System::Drawing::SystemColors::Control;
+			this->BoxInput->BackColor = System::Drawing::SystemColors::Window;
+			this->BoxInput->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BoxInput->Name = L"BoxInput";
 			// 
 			// BoxOutput
 			// 
 			resources->ApplyResources(this->BoxOutput, L"BoxOutput");
-			this->BoxOutput->ForeColor = System::Drawing::SystemColors::Control;
+			this->BoxOutput->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BoxOutput->Name = L"BoxOutput";
 			// 
 			// Button7
 			// 
 			resources->ApplyResources(this->Button7, L"Button7");
 			this->Button7->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button7->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button7->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button7->Name = L"Button7";
 			this->Button7->UseVisualStyleBackColor = false;
 			this->Button7->Click += gcnew System::EventHandler(this, &MyForm::Button7_Click);
@@ -187,7 +190,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button8, L"Button8");
 			this->Button8->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button8->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button8->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button8->Name = L"Button8";
 			this->Button8->UseVisualStyleBackColor = false;
 			this->Button8->Click += gcnew System::EventHandler(this, &MyForm::Button8_Click_1);
@@ -196,7 +199,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button9, L"Button9");
 			this->Button9->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button9->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button9->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button9->Name = L"Button9";
 			this->Button9->UseVisualStyleBackColor = false;
 			this->Button9->Click += gcnew System::EventHandler(this, &MyForm::Button9_Click_1);
@@ -205,7 +208,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonDivide, L"ButtonDivide");
 			this->ButtonDivide->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonDivide->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonDivide->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonDivide->Name = L"ButtonDivide";
 			this->ButtonDivide->UseVisualStyleBackColor = false;
 			// 
@@ -213,7 +216,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonMR, L"ButtonMR");
 			this->ButtonMR->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonMR->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonMR->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonMR->Name = L"ButtonMR";
 			this->ButtonMR->UseVisualStyleBackColor = false;
 			// 
@@ -221,7 +224,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonMC, L"ButtonMC");
 			this->ButtonMC->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonMC->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonMC->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonMC->Name = L"ButtonMC";
 			this->ButtonMC->UseVisualStyleBackColor = false;
 			// 
@@ -229,7 +232,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonMultiply, L"ButtonMultiply");
 			this->ButtonMultiply->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonMultiply->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonMultiply->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonMultiply->Name = L"ButtonMultiply";
 			this->ButtonMultiply->UseVisualStyleBackColor = false;
 			// 
@@ -237,7 +240,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button6, L"Button6");
 			this->Button6->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button6->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button6->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button6->Name = L"Button6";
 			this->Button6->UseVisualStyleBackColor = false;
 			this->Button6->Click += gcnew System::EventHandler(this, &MyForm::Button6_Click_1);
@@ -246,7 +249,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button5, L"Button5");
 			this->Button5->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button5->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button5->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button5->Name = L"Button5";
 			this->Button5->UseVisualStyleBackColor = false;
 			this->Button5->Click += gcnew System::EventHandler(this, &MyForm::Button5_Click_1);
@@ -255,7 +258,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button4, L"Button4");
 			this->Button4->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button4->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button4->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button4->Name = L"Button4";
 			this->Button4->UseVisualStyleBackColor = false;
 			this->Button4->Click += gcnew System::EventHandler(this, &MyForm::Button4_Click_1);
@@ -264,7 +267,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonEqual, L"ButtonEqual");
 			this->ButtonEqual->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonEqual->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonEqual->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonEqual->Name = L"ButtonEqual";
 			this->ButtonEqual->UseVisualStyleBackColor = false;
 			// 
@@ -272,7 +275,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonAdd, L"ButtonAdd");
 			this->ButtonAdd->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonAdd->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonAdd->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonAdd->Name = L"ButtonAdd";
 			this->ButtonAdd->UseVisualStyleBackColor = false;
 			// 
@@ -280,7 +283,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonDot, L"ButtonDot");
 			this->ButtonDot->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonDot->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonDot->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonDot->Name = L"ButtonDot";
 			this->ButtonDot->UseVisualStyleBackColor = false;
 			this->ButtonDot->Click += gcnew System::EventHandler(this, &MyForm::ButtonDot_Click);
@@ -289,7 +292,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonPosNeg, L"ButtonPosNeg");
 			this->ButtonPosNeg->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonPosNeg->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonPosNeg->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonPosNeg->Name = L"ButtonPosNeg";
 			this->ButtonPosNeg->UseVisualStyleBackColor = false;
 			this->ButtonPosNeg->Click += gcnew System::EventHandler(this, &MyForm::ButtonPosNeg_Click);
@@ -298,7 +301,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button0, L"Button0");
 			this->Button0->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button0->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button0->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button0->Name = L"Button0";
 			this->Button0->UseVisualStyleBackColor = false;
 			// 
@@ -306,7 +309,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonMPlus, L"ButtonMPlus");
 			this->ButtonMPlus->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonMPlus->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonMPlus->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonMPlus->Name = L"ButtonMPlus";
 			this->ButtonMPlus->UseVisualStyleBackColor = false;
 			// 
@@ -314,7 +317,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonMinus, L"ButtonMinus");
 			this->ButtonMinus->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonMinus->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonMinus->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonMinus->Name = L"ButtonMinus";
 			this->ButtonMinus->UseVisualStyleBackColor = false;
 			// 
@@ -322,7 +325,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button3, L"Button3");
 			this->Button3->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button3->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button3->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button3->Name = L"Button3";
 			this->Button3->UseVisualStyleBackColor = false;
 			this->Button3->Click += gcnew System::EventHandler(this, &MyForm::Button3_Click_1);
@@ -331,7 +334,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button2, L"Button2");
 			this->Button2->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button2->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button2->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button2->Name = L"Button2";
 			this->Button2->UseVisualStyleBackColor = false;
 			this->Button2->Click += gcnew System::EventHandler(this, &MyForm::Button2_Click_1);
@@ -340,7 +343,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->Button1, L"Button1");
 			this->Button1->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->Button1->ForeColor = System::Drawing::SystemColors::Control;
+			this->Button1->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button1->Name = L"Button1";
 			this->Button1->UseVisualStyleBackColor = false;
 			this->Button1->Click += gcnew System::EventHandler(this, &MyForm::Button1_Click_1);
@@ -362,7 +365,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonToDo, L"ButtonToDo");
 			this->ButtonToDo->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonToDo->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonToDo->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonToDo->Name = L"ButtonToDo";
 			this->ButtonToDo->UseVisualStyleBackColor = false;
 			this->ButtonToDo->Click += gcnew System::EventHandler(this, &MyForm::ButtonToDo_Click);
@@ -371,7 +374,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonChangeColor, L"ButtonChangeColor");
 			this->ButtonChangeColor->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonChangeColor->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonChangeColor->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonChangeColor->Name = L"ButtonChangeColor";
 			this->ButtonChangeColor->UseVisualStyleBackColor = false;
 			// 
@@ -379,7 +382,7 @@ namespace WindowAppTest {
 			// 
 			resources->ApplyResources(this->ButtonChangeFont, L"ButtonChangeFont");
 			this->ButtonChangeFont->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->ButtonChangeFont->ForeColor = System::Drawing::SystemColors::Control;
+			this->ButtonChangeFont->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonChangeFont->Name = L"ButtonChangeFont";
 			this->ButtonChangeFont->UseVisualStyleBackColor = false;
 			// 
