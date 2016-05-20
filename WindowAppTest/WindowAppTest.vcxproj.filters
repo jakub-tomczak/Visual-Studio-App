@@ -64,9 +64,13 @@
     <EmbeddedResource Include="MyForm.pl-PL.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="OpenFileDialog1.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="..\..\pineA64\GUI.pdf" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WindowAppTest.rc">

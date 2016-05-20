@@ -23,13 +23,91 @@ namespace WindowAppTest {
 			//
 		}
 
-	protected:	
-	Double liczba, liczba1, liczba2;
-	Double suma, roznica, iloczyn, iloraz;
-	Double bufor;
-	Char operacja;
-	Boolean przecinek;
-		/// <summary>
+	protected:
+		Double liczba, liczba1, liczba2;
+		Double suma, roznica, iloczyn, iloraz;
+		Double bufor;
+		Boolean przecinek, firstNum;
+		int dzialanieGlobal;
+
+		void inputReset()
+		{
+			BoxInput->Text = "0";
+		}	 //resetting input
+		void outputReset()
+		{
+			BoxOutput->Text = "0";
+		}	  //reseting output
+		void operacja(int dzialanie)
+		{
+			dzialanieGlobal = dzialanie;
+			if (firstNum)
+			{
+				liczba1 = Convert::ToDouble(BoxInput->Text);
+				inputReset();
+				przecinek = false;
+				firstNum = false;
+			}
+			else
+			{
+				liczba2 = Convert::ToDouble(BoxInput->Text);
+				inputReset();
+				przecinek = false;
+				firstNum = true;
+				wynik(dzialanie);
+				//koniec else
+			}
+		}
+
+		void wynik(int dzialanie)
+		{
+			liczba2 = Convert::ToDouble(BoxInput->Text);
+			if (dzialanie == -1)	//wywolany przez znak =
+				dzialanie = dzialanieGlobal;
+			liczba = 0.0;
+			switch (dzialanie)
+			{
+			case 0:	//dodawanie
+				liczba = liczba1 + liczba2;
+				break;
+			case 1: //odejmowanie
+				liczba = liczba1 - liczba2;
+				break;
+			case 2: //mnozenie
+				liczba = liczba1*liczba2;
+				break;
+			case 3: //dzielenie
+				if (liczba2 != 0.0)
+					liczba = liczba1 / liczba2;
+				else
+					TextBoxInfo->Text = L"[B£¥D] B³¹d dzielenia przez zero!\n\r";
+				break;
+			default:
+				TextBoxInfo->Text = L"[B£¥D] Nieznana operacja!\n\r";
+				break;
+			}
+			inputReset();
+			BoxOutput->Text = liczba.ToString();
+
+		}
+		void MR()
+		{
+			BoxInput->Text = bufor.ToString();
+		}
+		void MC()
+		{
+			bufor = 0.0;
+			LabelMemory->Text = L"0";
+		}
+		void Mplus ()
+		{
+			bufor = Convert::ToDouble(BoxInput->Text);
+			LabelMemory->Text = bufor.ToString();
+		}
+
+		
+	
+	/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
 		~MyForm()
@@ -211,6 +289,7 @@ namespace WindowAppTest {
 			this->ButtonDivide->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonDivide->Name = L"ButtonDivide";
 			this->ButtonDivide->UseVisualStyleBackColor = false;
+			this->ButtonDivide->Click += gcnew System::EventHandler(this, &MyForm::ButtonDivide_Click);
 			// 
 			// ButtonMR
 			// 
@@ -219,6 +298,7 @@ namespace WindowAppTest {
 			this->ButtonMR->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonMR->Name = L"ButtonMR";
 			this->ButtonMR->UseVisualStyleBackColor = false;
+			this->ButtonMR->Click += gcnew System::EventHandler(this, &MyForm::ButtonMR_Click);
 			// 
 			// ButtonMC
 			// 
@@ -227,6 +307,7 @@ namespace WindowAppTest {
 			this->ButtonMC->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonMC->Name = L"ButtonMC";
 			this->ButtonMC->UseVisualStyleBackColor = false;
+			this->ButtonMC->Click += gcnew System::EventHandler(this, &MyForm::ButtonMC_Click);
 			// 
 			// ButtonMultiply
 			// 
@@ -235,6 +316,7 @@ namespace WindowAppTest {
 			this->ButtonMultiply->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonMultiply->Name = L"ButtonMultiply";
 			this->ButtonMultiply->UseVisualStyleBackColor = false;
+			this->ButtonMultiply->Click += gcnew System::EventHandler(this, &MyForm::ButtonMultiply_Click);
 			// 
 			// Button6
 			// 
@@ -270,6 +352,7 @@ namespace WindowAppTest {
 			this->ButtonEqual->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonEqual->Name = L"ButtonEqual";
 			this->ButtonEqual->UseVisualStyleBackColor = false;
+			this->ButtonEqual->Click += gcnew System::EventHandler(this, &MyForm::ButtonEqual_Click);
 			// 
 			// ButtonAdd
 			// 
@@ -278,6 +361,7 @@ namespace WindowAppTest {
 			this->ButtonAdd->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonAdd->Name = L"ButtonAdd";
 			this->ButtonAdd->UseVisualStyleBackColor = false;
+			this->ButtonAdd->Click += gcnew System::EventHandler(this, &MyForm::ButtonAdd_Click);
 			// 
 			// ButtonDot
 			// 
@@ -312,6 +396,7 @@ namespace WindowAppTest {
 			this->ButtonMPlus->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->ButtonMPlus->Name = L"ButtonMPlus";
 			this->ButtonMPlus->UseVisualStyleBackColor = false;
+			this->ButtonMPlus->Click += gcnew System::EventHandler(this, &MyForm::ButtonMPlus_Click);
 			// 
 			// ButtonMinus
 			// 
@@ -320,6 +405,7 @@ namespace WindowAppTest {
 			this->ButtonMinus->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ButtonMinus->Name = L"ButtonMinus";
 			this->ButtonMinus->UseVisualStyleBackColor = false;
+			this->ButtonMinus->Click += gcnew System::EventHandler(this, &MyForm::ButtonMinus_Click);
 			// 
 			// Button3
 			// 
@@ -424,6 +510,7 @@ namespace WindowAppTest {
 			this->Controls->Add(this->LabelInput);
 			this->Controls->Add(this->ButtonNewWindow);
 			this->Name = L"MyForm";
+			this->Opacity = 0.9;
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -443,6 +530,8 @@ namespace WindowAppTest {
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 	przecinek = false;
 	bufor = 0;
+	firstNum = true;
+	liczba = liczba1 = liczba2 = 0.0;
 }
 private: System::Void ButtonToDo_Click(System::Object^  sender, System::EventArgs^  e) {
 			 TextBoxInfo->Text = TextBoxInfo->Text + "ToDo";
@@ -469,31 +558,79 @@ private: System::Void ButtonDot_Click(System::Object^  sender, System::EventArgs
 
 //Number Buttons
 private: System::Void Button7_Click(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "7";
+	NumHandle(7);
 }
 private: System::Void Button8_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "8";
+	NumHandle(8);
 }
 private: System::Void Button9_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "9";
+	NumHandle(9);
 }
 private: System::Void Button4_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "4";
+	NumHandle(4);
 }
 private: System::Void Button5_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "5";
+	NumHandle(5);
 }
 private: System::Void Button6_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "6";
+	NumHandle(6);
 }
 private: System::Void Button1_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "1";
+	NumHandle(1);
 }
 private: System::Void Button2_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "2";
+	NumHandle(2);
 }
 private: System::Void Button3_Click_1(System::Object^  sender, System::EventArgs^  e) {
-	BoxInput->Text = BoxInput->Text + "3";
+	NumHandle(3);
+}
+		 public:
+			 void NumHandle(int number)
+			 {
+				 if (!firstNum)	//obsluga drugiej liczby
+				 {
+					 if (BoxInput->Text == "0")
+					 {
+						 BoxInput->Text = number.ToString();
+					}
+					 else
+					 {
+						 if (number >= 0 && number <= 9)
+						 {
+							 BoxInput->Text = BoxInput->Text + number.ToString();
+						 }
+						 outputReset();
+					 }
+				 }
+				 else
+				 {
+					 BoxInput->Text = BoxInput->Text + number.ToString();
+				 }
+			 }
+
+private: System::Void ButtonMR_Click(System::Object^  sender, System::EventArgs^  e) {
+	MR();
+}
+private: System::Void ButtonMC_Click(System::Object^  sender, System::EventArgs^  e) {
+	MC();
+}
+private: System::Void ButtonMPlus_Click(System::Object^  sender, System::EventArgs^  e) {
+	Mplus();
+}
+private: System::Void ButtonDivide_Click(System::Object^  sender, System::EventArgs^  e) {
+	operacja(3);
+}
+private: System::Void ButtonMultiply_Click(System::Object^  sender, System::EventArgs^  e) {
+	operacja(2);
+}
+private: System::Void ButtonMinus_Click(System::Object^  sender, System::EventArgs^  e) {
+	operacja(1);
+}
+private: System::Void ButtonAdd_Click(System::Object^  sender, System::EventArgs^  e) {
+	operacja(0);
+}
+private: System::Void ButtonEqual_Click(System::Object^  sender, System::EventArgs^  e) {
+	wynik(-1);
 }
 };
 }

@@ -177,6 +177,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\pineA64\GUI.pdf" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
