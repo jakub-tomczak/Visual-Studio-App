@@ -271,7 +271,7 @@ namespace WindowAppTest {
 			this->Button8->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button8->Name = L"Button8";
 			this->Button8->UseVisualStyleBackColor = false;
-			this->Button8->Click += gcnew System::EventHandler(this, &MyForm::Button8_Click_1);
+			this->Button8->Click += gcnew System::EventHandler(this, &MyForm::cos);
 			// 
 			// Button9
 			// 
@@ -280,7 +280,7 @@ namespace WindowAppTest {
 			this->Button9->ForeColor = System::Drawing::Color::AliceBlue;
 			this->Button9->Name = L"Button9";
 			this->Button9->UseVisualStyleBackColor = false;
-			this->Button9->Click += gcnew System::EventHandler(this, &MyForm::Button9_Click_1);
+			this->Button9->Click += gcnew System::EventHandler(this, &MyForm::cos);
 			// 
 			// ButtonDivide
 			// 
@@ -551,6 +551,13 @@ private: System::Void ButtonDot_Click(System::Object^  sender, System::EventArgs
 	}
 	
 }
+		 public: void Metoda(String ^s)
+		 {
+
+			 Console::WriteLine(s);
+		 }
+
+
 	private: System::Void ButtonPosNeg_Click(System::Object^  sender, System::EventArgs^  e) {
 		//BoxInput->Text = BoxInput->"-"+Text;
 	}
@@ -625,8 +632,23 @@ private: System::Void ButtonMultiply_Click(System::Object^  sender, System::Even
 }
 private: System::Void ButtonMinus_Click(System::Object^  sender, System::EventArgs^  e) {
 	operacja(1);
+	Console::WriteLine(sender->ToString());
+	Metoda("-");
 }
+		 private: System::Void cos(System::Object^  sender, System::EventArgs^  e) {
+			// operacja(1);
+			 Console::WriteLine(sender->ToString());
+			
+			// Metoda("-");
+		 }
+		
+
 private: System::Void ButtonAdd_Click(System::Object^  sender, System::EventArgs^  e) {
+	//OutputDebugStringA(e->ToString());
+	Console::WriteLine(sender->ToString());
+	System::Threading::Thread::Sleep(2000);
+	Console::WriteLine("Teraz jadê dalej");
+	System::Threading::Thread::Sleep(20000);
 	operacja(0);
 }
 private: System::Void ButtonEqual_Click(System::Object^  sender, System::EventArgs^  e) {
